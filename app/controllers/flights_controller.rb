@@ -1,7 +1,12 @@
 class FlightsController < ApplicationController
 	def index
-		@flights = Flight.paginate(page: params[:page])
+		if params[:search]
+			@flights = Flight.where(from: params[:search])
+		else
+			@flights = Flight.paginate(page: params[:page])
+		end
 	end
+
 
 	def new
 		@flight = Flight.new

@@ -1,4 +1,4 @@
 class Userbooking < ApplicationRecord
-	belongs_to :user
-	belongs_to :booking
+  belongs_to :user
+  belongs_to :booking
 end

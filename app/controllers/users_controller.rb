@@ -9,22 +9,31 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-
   end
 
   def new
-    @user = User.new
+    # @user = User.new
+    @users = []
+    5.times do
+      @users << User.new
+    end
   end
 
   def create
-    @user = User.new(user_params)
-    if @user.save
-      @user.send_activation_email
-      flash[:info] = "Please check your email to activate your account."
-      redirect_to root_url
-    else
-      render 'new'
-    end
+    # @user = User.new(user_params)
+    # if @user.save
+    #   @user.send_activation_email
+    #   flash[:info] = "Please check your email to activate your account."
+    #   redirect_to root_url
+    # else
+    #   render 'new'
+    # end
+    p params
+    # # params["users"].each do |user|
+      
+    # #     User.create(name: "hola")
+  
+    # # end
   end
 
   def edit
@@ -47,19 +56,10 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
-  def following
-    @title = "Following"
-    @user  = User.find(params[:id])
-    @users = @user.following.paginate(page: params[:page])
-    render 'show_follow'
+  def puppy_params(my_params)
+    my_params.permit(:name)
   end
 
-  def followers
-    @title = "Followers"
-    @user  = User.find(params[:id])
-    @users = @user.followers.paginate(page: params[:page])
-    render 'show_follow'
-  end
 
   private
 

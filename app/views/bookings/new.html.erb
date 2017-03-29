@@ -1,0 +1,27 @@
+<h1>Reservar</h1>
+<h2>Asientos disponibles:</h2>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <% if params[:total].to_i < 100 %>
+      <% params[:total].to_i.times do |i| %>
+        <%= form_for @user do |f| %>    
+          <%= f.label :pasajero, "pasajero #{i + 1}" %>
+          <%= f.text_field :name, class: 'form-control' %>
+          
+          <%= f.submit "Create my account", class: "btn btn-primary" %> 
+        <% end %>
+      <% end %>
+    <% else %>
+      <p>sorry</p>
+    <% end %>
+  </div>
+</div>
+
+<%= form_tag searches_path, :method => 'get' do |f| %>
+  <p>
+    <%= text_field_tag :from %>
+    <%= date_field_tag :date %>
+    <%= submit_tag "Search" %>
+  </p>
+<% end %>

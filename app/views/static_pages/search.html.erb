@@ -1,0 +1,7 @@
+<%= form_tag searches_path, :method => 'get' do |f| %>
+  <p>
+    <%= text_field_tag :from %>
+    <%= date_field_tag :date %>
+    <%= submit_tag "Search" %>
+  </p>
+<% end %>

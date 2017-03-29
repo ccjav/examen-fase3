@@ -3,6 +3,13 @@
     <section>
       <h1>Vuelo <%= @flight.num_flight %></h1>
     </section>
-    <%#= render 'follow_form' if logged_in? %>
+    
+    <%= form_tag new_flight_booking_path(@flight.id), :method => 'get' do |f| %>
+    <p>
+      <%= text_field_tag :total %>
+      
+      <%= submit_tag "Reserva", class: "btn btn-lg btn-primary" %>
+    </p>
+  <% end %>
   </aside>
 </div>
