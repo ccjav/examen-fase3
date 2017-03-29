@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/login -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Log in | Ruby on rails tutorial sample app</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="nbC0ZgN6tyjXuu/arJXgFdpYLAkZ6lZ0XImRf4xfg/1osDIuLS9KdaML2xhHJsL4lPJ/xtrrp26QLb732zBi0Q==">
+
+    <link rel="stylesheet" media="all" href="./Log in _ Ruby on rails tutorial sample app_files/custom.self-307ac2420d7514a31ef53a184147c7a84bb530bfc07b0ac20c257c34061edaee.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Log in _ Ruby on rails tutorial sample app_files/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Log in _ Ruby on rails tutorial sample app_files/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Log in _ Ruby on rails tutorial sample app_files/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Log in _ Ruby on rails tutorial sample app_files/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css" data-turbolinks-track="reload">
+    <script src="./Log in _ Ruby on rails tutorial sample app_files/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js" data-turbolinks-track="reload"></script>
+<script src="./Log in _ Ruby on rails tutorial sample app_files/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js" data-turbolinks-track="reload"></script>
+<script src="./Log in _ Ruby on rails tutorial sample app_files/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js" data-turbolinks-track="reload"></script>
+<script src="./Log in _ Ruby on rails tutorial sample app_files/action_cable.self-17ebe4af84895fa064a951f57476799066237d7bb5dc4dc351a8b01cca19cce9.js" data-turbolinks-track="reload"></script>
+<script src="./Log in _ Ruby on rails tutorial sample app_files/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js" data-turbolinks-track="reload"></script>
+<script src="./Log in _ Ruby on rails tutorial sample app_files/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="reload"></script>
+<script src="./Log in _ Ruby on rails tutorial sample app_files/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="reload"></script>
+<script src="./Log in _ Ruby on rails tutorial sample app_files/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="reload"></script>
+<script src="./Log in _ Ruby on rails tutorial sample app_files/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js" data-turbolinks-track="reload"></script>
+    
+    
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <a id="logo" href="http://localhost:3000/">mi app</a>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://localhost:3000/">Home</a></li>
+            <li><a href="http://localhost:3000/help">Help</a></li>
+            <li><a href="http://localhost:3000/login#">Log in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <div class="container">
+      <h1>Log in</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <form action="http://localhost:3000/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="nbC0ZgN6tyjXuu/arJXgFdpYLAkZ6lZ0XImRf4xfg/1osDIuLS9KdaML2xhHJsL4lPJ/xtrrp26QLb732zBi0Q==">
+
+      <label for="session_email">Email</label>
+      <input class="form-control" type="email" name="session[email]" id="session_email">
+
+      <label for="session_password">Password</label>
+      <input class="form-control" type="password" name="session[password]" id="session_password">
+
+      <input type="submit" name="commit" value="Log in" class="btn btn-primary" data-disable-with="Log in">
+</form>
+    <p>New user? <a href="http://localhost:3000/signup">Sign up now!</a></p>
+  </div>
+</div>
+      <footer class="footer">
+  <small>
+    The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+  </small>
+  <nav>
+    <ul>
+      <li><a href="http://localhost:3000/about">About</a></li>
+      <li><a href="http://localhost:3000/contact">Contact</a></li>
+      <li><a href="http://news.railstutorial.org/">News</a></li>
+    </ul>
+  </nav>
+</footer>
+      <pre class="debug_dump">--- !ruby/object:ActionController::Parameters
+parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  utf8: "✓"
+  authenticity_token: "+An4XwqBE+6rcnXv7sQY+VfoCT/9FnN/bRdVrLpF3RYNCX4XJNTus9/DQS0FdzoUGUJa8D4XgmWhs3ok7So8Og=="
+  session: !ruby/object:ActionController::Parameters
+    parameters: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      email: ''
+      password: ''
+    permitted: false
+  commit: Log in
+  controller: sessions
+  action: create
+permitted: false
+</pre>
+    </div>
+  
+
+</body></html>
